@@ -1,0 +1,27 @@
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<link rel="stylesheet" href="task.css">
+ <script src="task.js" defer></script>
+<title>Оценка качества</title>
+</head>
+
+
+<body>
+  <div class="rating-container" role="main" aria-label="Оценка качества">
+    <h1>Оцените качество</h1>
+    <div class="stars" role="radiogroup" aria-label="Оценка от 1 до 5 звёзд">
+      <!-- Звёзды расположены в обратном порядке для подсветки слева -->
+      <span class="star" data-value="5" role="radio" aria-checked="false" tabindex="-1" aria-label="5 звёзд">&#9733;</span>
+      <span class="star" data-value="4" role="radio" aria-checked="false" tabindex="-1" aria-label="4 звезды">&#9733;</span>
+      <span class="star" data-value="3" role="radio" aria-checked="false" tabindex="-1" aria-label="3 звезды">&#9733;</span>
+      <span class="star" data-value="2" role="radio" aria-checked="false" tabindex="-1" aria-label="2 звезды">&#9733;</span>
+      <span class="star" data-value="1" role="radio" aria-checked="false" tabindex="0" aria-label="1 звезда">&#9733;</span>
+    </div>
+    <div class="feedback-area" aria-live="polite">
+      <textarea id="feedback-text" placeholder="Пожалуйста, оставьте ваш отзыв..."></textarea>
+      <button class="submit-btn" type="button">Отправить отзыв</button>
+    </div>
+  </div>
+  </body>
